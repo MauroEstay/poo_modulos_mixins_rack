@@ -32,7 +32,8 @@ class Car < Vehicle
 end
 
 10.times do |i|
-    Car.new
+    Car.new.engine_start
+    # Car.new.engine_start
 end
 
-puts Car.get_number_of_instances
+puts "Se fabricaron #{Car.get_number_of_instances} autos"
